@@ -1,9 +1,9 @@
 // ENLIVEN
 // Bootswatch
 // -----------------------------------------------------
-@import "bower_components/compass-mixins/lib/compass/css3/box-shadow.scss";
+@import "bower_components/compass-sass-mixins/lib/compass";
 
-$web-font-path: "http://fonts.enliven.se/fonts/fonts.css" !default;
+$web-font-path: "//fonts.enliven.se/fonts/fonts.css" !default;
 @import url($web-font-path);
 
 // Navbar =====================================================================

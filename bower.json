@@ -16,9 +16,14 @@
   ],
   "license": "MIT",
   "ignore": [
-    "**/.*"
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
   ],
-  "devDependencies": {
-    "compass-mixins": "^1.0.2"
+  "devDependencies": {},
+  "dependencies": {
+    "compass-sass-mixins": "*"
   }
 }
