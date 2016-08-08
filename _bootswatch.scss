@@ -1,6 +1,7 @@
 // ENLIVEN
 // Bootswatch
 // -----------------------------------------------------
+@import "bower_components/compass-mixins/lib/compass/css3/box-shadow.scss";
 
 $web-font-path: "http://fonts.enliven.se/fonts/fonts.css" !default;
 @import url($web-font-path);
@@ -99,10 +100,10 @@ $web-font-path: "http://fonts.enliven.se/fonts/fonts.css" !default;
     }
 
     &-vertical {
-         > .btn + .btn,
+         > .btn + .btn-group,
          > .btn-group + .btn,
          > .btn-group + .btn-group,
-        > .btn + .btn-group {
+        > .btn + .btn {
             margin-top: 0;
         }
     }
@@ -132,9 +133,9 @@ a {
 // Tables =====================================================================
 
 .table-hover {
-     > tbody > tr,
+     > tbody > tr > td,
      > tbody > tr > th,
-    > tbody > tr > td {
+    > tbody > tr {
         @include transition(all 0.2s);
     }
 }
@@ -418,8 +419,8 @@ input[type="checkbox"] {
 // Navs =======================================================================
 
 .nav-tabs {
-     > li > a,
-    > li > a:focus {
+     > li > a:focus,
+    > li > a {
         margin-right    : 0;
         background-color: transparent;
         border          : none;

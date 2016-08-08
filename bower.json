@@ -1,21 +1,24 @@
 {
-    "name": "enliven-bootswatch",
-    "version": "0.0.1",
-    "homepage": "https://github.com/Enliven-se/enliven-bootswatch",
-    "authors": [
-        "Daniel \"Klokie\" Grossfeld"
-    ],
-    "description": "Bootstrap bootswatch for ENLIVEN",
-    "main": [
-        "_variables.scss",
-        "_bootswatch.scss"
-    ],
-    "keywords": [
-        "bootstrap",
-        "sass"
-    ],
-    "license": "MIT",
-    "ignore": [
-        "**/.*"
-    ]
+  "name": "enliven-bootswatch",
+  "version": "0.0.1",
+  "homepage": "https://github.com/Enliven-se/enliven-bootswatch",
+  "authors": [
+    "Daniel \"Klokie\" Grossfeld"
+  ],
+  "description": "Bootstrap bootswatch for ENLIVEN",
+  "main": [
+    "_variables.scss",
+    "_bootswatch.scss"
+  ],
+  "keywords": [
+    "bootstrap",
+    "sass"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*"
+  ],
+  "devDependencies": {
+    "compass-mixins": "^1.0.2"
+  }
 }
