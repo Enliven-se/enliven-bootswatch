@@ -1,13 +1,12 @@
 {
   "name": "enliven-bootswatch",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/Enliven-se/enliven-bootswatch",
   "authors": [
     "Daniel \"Klokie\" Grossfeld"
   ],
   "description": "Bootstrap bootswatch for ENLIVEN",
   "main": [
-    "_variables.scss",
     "_bootswatch.scss"
   ],
   "keywords": [
