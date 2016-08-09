@@ -2,5 +2,6 @@
 @import '_bootswatch.scss';
 
 // bower:scss
-// endbower
+@import 'bower_components/compass-mixins/lib/_compass.scss';
 @import 'bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
+// endbower
