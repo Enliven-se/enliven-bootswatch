@@ -1,8 +1,10 @@
 // ENLIVEN
 // Bootswatch
 // -----------------------------------------------------
-@import "bower_components/compass-sass-mixins/lib/compass";
+@import "bower_components/compass-mixins/lib/compass";
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
 
+// include fonts
 $web-font-path: "//fonts.enliven.se/fonts/fonts.css" !default;
 @import url($web-font-path);
 
@@ -22,8 +24,7 @@ $web-font-path: "//fonts.enliven.se/fonts/fonts.css" !default;
             input[type=text] {
                 color: #fff;
                 @include box-shadow(inset 0 -1px 0 $navbar-inverse-link-color);
-                @include placeholder($navbar-inverse-link-color);
-
+                // @include input-placeholder($navbar-inverse-link-color);
                 &:focus {
                     @include box-shadow(inset 0 -2px 0 #fff);
                 }
@@ -49,7 +50,7 @@ $web-font-path: "//fonts.enliven.se/fonts/fonts.css" !default;
 
         &:active {
             background-color: darken($bg, 12%);
-            @include gradient-radial(darken($bg, 12%) 10%, $bg 11%);
+            @include filter-gradient(darken($bg, 12%), $bg);
             background-size : 1000% 1000%;
             @include box-shadow(2px 2px 4px rgba(0,0,0,.4));
         }
@@ -64,10 +65,11 @@ $web-font-path: "//fonts.enliven.se/fonts/fonts.css" !default;
 @include btn(link,#fff);
 
 .btn {
-    text-transform: uppercase;
-    border        : none;
+    border     : none;
+    line-height: 1.42857;
     @include box-shadow(1px 1px 4px rgba(0,0,0,.4));
     @include transition(all 0.4s);
+    @include button-size($padding-base-vertical, $padding-base-horizontal, $font-size-base, $line-height-base, $btn-border-radius-base);
 
     &-link {
         border-radius: $btn-border-radius-base;
@@ -100,10 +102,10 @@ $web-font-path: "//fonts.enliven.se/fonts/fonts.css" !default;
     }
 
     &-vertical {
-         > .btn + .btn-group,
+         > .btn + .btn,
          > .btn-group + .btn,
          > .btn-group + .btn-group,
-        > .btn + .btn {
+        > .btn + .btn-group {
             margin-top: 0;
         }
     }
@@ -112,18 +114,39 @@ $web-font-path: "//fonts.enliven.se/fonts/fonts.css" !default;
 // Typography =================================================================
 
 body {
-    -webkit-font-smoothing: antialiased;
-    letter-spacing        : 0.1px;
+    // -webkit-font-smoothing: antialiased;
+    // letter-spacing        : 0.1px;
+    font-family: $font-family-sans-serif;
+    font-style : normal;
 }
 
 p {
     margin: 0 0 1em;
 }
 
+.small,
+small {
+    font-weight: 400;
+}
+
+.thin {
+    font-weight: 100;
+}
+
+strong {
+    font-family: inherit;
+    font-weight: 500 !important;
+}
+
+em {
+    font-style : italic;
+    font-weight: 400;
+}
+
 button,
 input {
-    -webkit-font-smoothing: antialiased;
-    letter-spacing        : 0.1px;
+    // -webkit-font-smoothing: antialiased;
+    // letter-spacing        : 0.1px;
 }
 
 a {
@@ -133,9 +156,9 @@ a {
 // Tables =====================================================================
 
 .table-hover {
-     > tbody > tr > td,
+     > tbody > tr,
      > tbody > tr > th,
-    > tbody > tr {
+    > tbody > tr > td {
         @include transition(all 0.2s);
     }
 }
@@ -419,8 +442,8 @@ input[type="checkbox"] {
 // Navs =======================================================================
 
 .nav-tabs {
-     > li > a:focus,
-    > li > a {
+     > li > a,
+    > li > a:focus {
         margin-right    : 0;
         background-color: transparent;
         border          : none;
