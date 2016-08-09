@@ -108,7 +108,23 @@ gulp.task('wiredep', () => {
     .pipe(gulp.dest('app'));
 });
 
-gulp.task('build', ['html'], () => {
+gulp.task('extras', () => {
+  return gulp.src([
+    'app/CNAME',
+    'app/robots.txt'
+  ], {
+    dot: true
+  }).pipe(gulp.dest(destination));
+});
+
+// deploy to Github pages
+gulp.task('deploy', ['build', 'extras'], () => {
+  return gulp.src(destination)
+    .pipe($.subtree())
+    .pipe($.clean());
+});
+
+gulp.task('build', ['html', 'extras'], () => {
   return gulp.src(destination + '/**/*').pipe($.size({
     title: 'build',
     gzip: true
