@@ -23,6 +23,7 @@
   ],
   "devDependencies": {},
   "dependencies": {
-    "compass-sass-mixins": "*"
+    "compass-mixins": "*",
+    "bootstrap-sass": "^3.3.7"
   }
 }

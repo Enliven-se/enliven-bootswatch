@@ -1,0 +1,25 @@
+{
+  "private": true,
+  "engines": {
+    "node": ">=4"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-load-plugins": "^0.10.0",
+    "gulp-sass": "^2.3.2",
+    "sc5-styleguide": "^1.1.1"
+  },
+  "eslintConfig": {
+    "env": {
+      "es6": true,
+      "node": true,
+      "browser": true
+    },
+    "rules": {
+      "quotes": [
+        2,
+        "single"
+      ]
+    }
+  }
+}
