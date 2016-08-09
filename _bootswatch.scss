@@ -102,10 +102,10 @@ $web-font-path: "//style.enliven.se/fonts/fonts.css" !default;
     }
 
     &-vertical {
-         > .btn + .btn-group,
+         > .btn + .btn,
          > .btn-group + .btn,
          > .btn-group + .btn-group,
-        > .btn + .btn {
+        > .btn + .btn-group {
             margin-top: 0;
         }
     }
@@ -118,6 +118,10 @@ body {
     // letter-spacing        : 0.1px;
     font-family: $font-family-sans-serif;
     font-style : normal;
+}
+
+blockquote {
+    font-family: $font-family-serif;
 }
 
 p {
@@ -156,9 +160,9 @@ a {
 // Tables =====================================================================
 
 .table-hover {
-     > tbody > tr > td,
+     > tbody > tr,
      > tbody > tr > th,
-    > tbody > tr {
+    > tbody > tr > td {
         @include transition(all 0.2s);
     }
 }
@@ -442,8 +446,8 @@ input[type="checkbox"] {
 // Navs =======================================================================
 
 .nav-tabs {
-     > li > a:focus,
-    > li > a {
+     > li > a,
+    > li > a:focus {
         margin-right    : 0;
         background-color: transparent;
         border          : none;
@@ -639,5 +643,32 @@ input[type="checkbox"] {
         h6 {
             color: inherit;
         }
+    }
+}
+
+// shrink headlines for small screens
+@media (max-width: $screen-xs-max) {
+    .navbar {
+        min-height: auto;
+    }
+
+    h1 {
+        $font-size-h1: ($font-size-h1/100%) * 65%;
+        font-size    : $font-size-h1;
+    }
+
+    h2 {
+        $font-size-h2: ($font-size-h2/100%) * 65%;
+        font-size    : $font-size-h2;
+    }
+
+    h3 {
+        $font-size-h3: ($font-size-h3/100%) * 65%;
+        font-size    : $font-size-h3;
+    }
+
+    h4 {
+        $font-size-h4: ($font-size-h4/100%) * 65%;
+        font-size    : $font-size-h4;
     }
 }
