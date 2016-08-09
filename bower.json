@@ -21,7 +21,10 @@
     "test",
     "tests"
   ],
-  "devDependencies": {},
+  "devDependencies": {
+    "html5shiv": "^3.7.3",
+    "respond": "scottjehl/Respond#^1.4.2"
+  },
   "dependencies": {
     "compass-mixins": "*",
     "bootstrap-sass": "^3.3.7"

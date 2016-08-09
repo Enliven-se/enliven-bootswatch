@@ -4,20 +4,16 @@ const gulpLoadPlugins = require('gulp-load-plugins');
 const $ = gulpLoadPlugins();
 
 const fs = require('fs');
-const browserSync = require('browser-sync');
 const del = require('del');
 const wiredep = require('wiredep').stream;
-const browserify = require('browserify');
-const babelify = require('babelify');
-const buffer = require('vinyl-buffer');
-const source = require('vinyl-source-stream');
 
+const browserSync = require('browser-sync');
 const reload = browserSync.reload;
 
 const destination = 'guide';
 
 gulp.task('styles', () => {
-  return gulp.src('*.scss')
+  return gulp.src('app/styles/*.scss')
     .pipe($.plumber())
     .pipe($.sourcemaps.init())
     .pipe($.sass.sync({
@@ -50,15 +46,6 @@ gulp.task('html', ['styles'], () => {
     .pipe(gulp.dest(destination));
 });
 
-gulp.task('extras', () => {
-  return gulp.src([
-    'app/*.*',
-    '!app/*.html'
-  ], {
-    dot: true
-  }).pipe(gulp.dest(destination));
-});
-
 gulp.task('clean', del.bind(null, ['.tmp', destination]));
 
 gulp.task('serve', ['styles'], () => {
@@ -77,7 +64,7 @@ gulp.task('serve', ['styles'], () => {
     'app/*.html'
   ]).on('change', reload);
 
-  gulp.watch('*.scss', ['styles']);
+  gulp.watch('app/styles/**/*.scss', ['styles']);
   gulp.watch('bower.json', ['wiredep']);
 });
 
@@ -107,7 +94,7 @@ gulp.task('serve:test', [], () => {
 
 // inject bower components
 gulp.task('wiredep', () => {
-  gulp.src('*.scss')
+  gulp.src('app/styles/*.scss')
     .pipe(wiredep({
       ignorePath: /^(\.\.\/)+/
     }))
@@ -121,7 +108,7 @@ gulp.task('wiredep', () => {
     .pipe(gulp.dest('app'));
 });
 
-gulp.task('build', ['html', 'extras'], () => {
+gulp.task('build', ['html'], () => {
   return gulp.src(destination + '/**/*').pipe($.size({
     title: 'build',
     gzip: true
