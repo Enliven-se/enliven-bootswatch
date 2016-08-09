@@ -141,14 +141,6 @@ gulp.task('extras', () => {
   }).pipe(gulp.dest(destination));
 });
 
-gulp.task('cname', () => {
-  return gulp.src([
-    'app/CNAME'
-  ], {
-    dot: true
-  }).pipe(gulp.dest(destination));
-});
-
 gulp.task('clean', () => {
   return del([
     '.tmp',
@@ -258,7 +250,7 @@ gulp.task('views', () => {
 });
 
 // deploy to Github pages
-gulp.task('deploy', ['build', 'cname'], () => {
+gulp.task('deploy', ['build', 'extras'], () => {
   return gulp.src(destination)
     .pipe($.subtree())
     .pipe($.clean());
