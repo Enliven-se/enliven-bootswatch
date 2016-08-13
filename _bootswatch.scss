@@ -102,10 +102,10 @@ $web-font-path: "//style.enliven.se/fonts/fonts.css" !default;
     }
 
     &-vertical {
-         > .btn + .btn-group,
+         > .btn + .btn,
          > .btn-group + .btn,
          > .btn-group + .btn-group,
-        > .btn + .btn {
+        > .btn + .btn-group {
             margin-top: 0;
         }
     }
@@ -118,6 +118,17 @@ body {
     // letter-spacing        : 0.1px;
     font-family: $font-family-sans-serif;
     font-style : normal;
+}
+
+h1 {
+    font-family: $font-family-serif-bold;
+}
+
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-family-sans-serif-bold;
 }
 
 blockquote {
@@ -160,9 +171,9 @@ a {
 // Tables =====================================================================
 
 .table-hover {
-     > tbody > tr > td,
+     > tbody > tr,
      > tbody > tr > th,
-    > tbody > tr {
+    > tbody > tr > td {
         @include transition(all 0.2s);
     }
 }
@@ -446,8 +457,8 @@ input[type="checkbox"] {
 // Navs =======================================================================
 
 .nav-tabs {
-     > li > a:focus,
-    > li > a {
+     > li > a,
+    > li > a:focus {
         margin-right    : 0;
         background-color: transparent;
         border          : none;

@@ -7,17 +7,38 @@ $bootstrap-sass-asset-helper                : false !default;
 //
 //## Gray and brand colors for use across Bootstrap.
 
-$gray-base                                  : #000 !default;
-$gray-darker                                : #454241;
-$gray-dark                                  : lighten($gray-base, 20%) !default; // #333333
-$gray                                       : #666 !default;
-$gray-light                                 : #bbb !default;
-$gray-lighter                               : #c1c1c1;
+$black-forest                               : #0c1204;
+$dawn-pink                                  : #e5dace;
+$jaffa                                      : #f26b49;
+$jungle-green                               : #2db59a;
+$sea-green                                  : #21b69a;
+$sea-pink                                   : #f49f9c;
+$shakespeare                                : #4ea2ce;
+$supernova                                  : #ffad30;
+$tomato                                     : #f46a42;
 
-$brand-primary                              : #2196F3 !default;
-$brand-success                              : #4CAF50 !default;
-$brand-info                                 : #9C27B0 !default;
-$brand-warning                              : #ff9800 !default;
+// $vivid-blue                                 : #2196f3;
+// $dark-moderate-lime-green                   : #4caf50;
+// $dark-magenta                               : #9c27b0;
+// $pure-orange                                : #ff9800;
+// $vivid-red                                  : #e51c23;
+// $gray-base                                  : #000;
+// $gray-dark                                  : lighten($gray-base, 20%) !default; // #333333
+// $gray                                       : #666 !default;
+// $gray-light                                 : #bbb !default;
+// $gray-lighter                               : #c1c1c1;
+
+$gray-base                                  : $black-forest;
+$gray-darker                                : #454241;
+$gray-dark                                  : #3c4137;
+$gray                                       : #6d7069;
+$gray-light                                 : #9da09b;
+$gray-lighter                               : #cecfcd;
+
+$brand-primary                              : $shakespeare !default;
+$brand-success                              : $sea-green !default;
+$brand-info                                 : $sea-pink !default;
+$brand-warning                              : $tomato !default;
 $brand-danger                               : #e51c23 !default;
 
 //== Scaffolding
@@ -27,7 +48,7 @@ $brand-danger                               : #e51c23 !default;
 //** Background color for `<body>`.
 $body-bg                                    : #fff !default;
 //** Global text color on `<body>`.
-$text-color                                 : $gray !default;
+$text-color                                 : $gray-darker !default;
 
 //** Global textual link color.
 $link-color                                 : $brand-primary !default;
@@ -41,7 +62,9 @@ $link-hover-decoration                      : underline !default;
 //## Font, line-height, and color for body text, headings, and more.
 
 $font-family-sans-serif                     : 'avenirnext-regular', Helvetica, Arial, sans-serif;
+$font-family-sans-serif-bold                : 'avenirnext-bold', Helvetica, Arial, sans-serif;
 $font-family-serif                          : 'TheanoDidot-Regular', Georgia, 'Times New Roman', Times, serif;
+$font-family-serif-bold                     : 'TheanoDidot-Bold', Georgia, 'Times New Roman', Times, serif;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 $font-family-monospace                      : Menlo, Monaco, Consolas, 'Courier New', monospace;
 $font-family-base                           : $font-family-sans-serif;
@@ -53,8 +76,8 @@ $font-size-small                            : ceil(($font-size-base * 0.85)); //
 $font-size-h1                               : 56px;
 $font-size-h2                               : 45px;
 $font-size-h3                               : 34px;
-$font-size-h4                               : 18px;
-$font-size-h5                               : 20px;
+$font-size-h4                               : 20px;
+$font-size-h5                               : 18px;
 $font-size-h6                               : 14px;
 
 //** Unit-less `line-height` for use in components like buttons.
@@ -66,7 +89,7 @@ $line-height-computed                       : floor(($font-size-base * $line-hei
 $headings-font-family                       : $font-family-serif;
 $headings-font-weight                       : 400;
 $headings-line-height                       : 1.1;
-$headings-color                             : #444;
+$headings-color                             : $black-forest;
 
 //== Iconography
 //
@@ -138,7 +161,7 @@ $table-border-color                         : #ddd !default;
 
 $btn-font-weight                            : normal !default;
 
-$btn-default-color                          : #444 !default;
+$btn-default-color                          : $black-forest !default;
 $btn-default-bg                             : #fff !default;
 $btn-default-border                         : transparent !default;
 
@@ -388,7 +411,7 @@ $navbar-inverse-link-hover-color            : #fff !default;
 $navbar-inverse-link-hover-bg               : transparent !default;
 $navbar-inverse-link-active-color           : $navbar-inverse-link-hover-color !default;
 $navbar-inverse-link-active-bg              : darken($navbar-inverse-bg, 10%) !default;
-$navbar-inverse-link-disabled-color         : #444 !default;
+$navbar-inverse-link-disabled-color         : $black-forest !default;
 $navbar-inverse-link-disabled-bg            : transparent !default;
 
 // Inverted navbar brand label
@@ -582,7 +605,7 @@ $modal-content-border-color                 : transparent !default;
 $modal-content-fallback-border-color        : #999 !default;
 
 //** Modal backdrop background color
-$modal-backdrop-bg                          : #000 !default;
+$modal-backdrop-bg                          : $black-forest !default;
 //** Modal backdrop opacity
 $modal-backdrop-opacity                     : 0.5 !default;
 //** Modal header border color
@@ -790,7 +813,7 @@ $carousel-caption-color                     : #fff !default;
 //##
 
 $close-font-weight                          : normal !default;
-$close-color                                : #000 !default;
+$close-color                                : $black-forest !default;
 $close-text-shadow                          : none !default;
 
 //== Code
