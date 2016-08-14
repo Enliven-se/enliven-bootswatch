@@ -27,6 +27,7 @@ $tomato                                     : #f46a42;
 // $gray                                       : #666 !default;
 // $gray-light                                 : #bbb !default;
 // $gray-lighter                               : #c1c1c1;
+// $well-bg                                    : #f5f5f5;
 
 $gray-base                                  : $black-forest;
 $gray-darker                                : #454241;
@@ -34,6 +35,8 @@ $gray-dark                                  : #3c4137;
 $gray                                       : #6d7069;
 $gray-light                                 : #9da09b;
 $gray-lighter                               : #cecfcd;
+$gray-lighter-bg                            : #f5f5f5;
+$gray-lighter-bg2                           : #dddddd;
 
 $brand-primary                              : $shakespeare !default;
 $brand-success                              : $sea-green !default;
@@ -149,11 +152,11 @@ $table-bg                                   : transparent !default;
 //** Background color used for `.table-striped`.
 $table-bg-accent                            : #f9f9f9 !default;
 //** Background color used for `.table-hover`.
-$table-bg-hover                             : #f5f5f5 !default;
+$table-bg-hover                             : $gray-lighter-bg !default;
 $table-bg-active                            : $table-bg-hover !default;
 
 //** Border color for table and cell borders.
-$table-border-color                         : #ddd !default;
+$table-border-color                         : $gray-lighter-bg2 !default;
 
 //== Buttons
 //
@@ -458,11 +461,11 @@ $nav-pills-active-link-hover-color          : $component-active-color !default;
 
 $pagination-color                           : $link-color !default;
 $pagination-bg                              : #fff !default;
-$pagination-border                          : #ddd !default;
+$pagination-border                          : $gray-lighter-bg2 !default;
 
 $pagination-hover-color                     : $link-hover-color !default;
 $pagination-hover-bg                        : $gray-lighter !default;
-$pagination-hover-border                    : #ddd !default;
+$pagination-hover-border                    : $gray-lighter-bg2 !default;
 
 $pagination-active-color                    : #fff !default;
 $pagination-active-bg                       : $brand-primary !default;
@@ -470,7 +473,7 @@ $pagination-active-border                   : $brand-primary !default;
 
 $pagination-disabled-color                  : $gray-light !default;
 $pagination-disabled-bg                     : #fff !default;
-$pagination-disabled-border                 : #ddd !default;
+$pagination-disabled-border                 : $gray-lighter-bg2 !default;
 
 //== Pager
 //
@@ -493,7 +496,7 @@ $pager-disabled-color                       : $pagination-disabled-color !defaul
 
 $jumbotron-padding                          : 30px !default;
 $jumbotron-color                            : inherit !default;
-$jumbotron-bg                               : #f5f5f5 !default;
+$jumbotron-bg                               : $gray-lighter-bg !default;
 $jumbotron-heading-color                    : $headings-color !default;
 $jumbotron-font-size                        : ceil(($font-size-base * 1.5)) !default;
 $jumbotron-heading-font-size                : ceil(($font-size-base * 4.5)) !default;
@@ -646,7 +649,7 @@ $alert-danger-border                        : $state-danger-border !default;
 //##
 
 //** Background color of the whole progress component
-$progress-bg                                : #f5f5f5 !default;
+$progress-bg                                : $gray-lighter-bg !default;
 //** Progress bar text color
 $progress-bar-color                         : #fff !default;
 //** Variable for setting rounded corners on progress bar.
@@ -670,12 +673,12 @@ $progress-bar-info-bg                       : $brand-info !default;
 //** Background color on `.list-group-item`
 $list-group-bg                              : #fff !default;
 //** `.list-group-item` border color
-$list-group-border                          : #ddd !default;
+$list-group-border                          : $gray-lighter-bg2 !default;
 //** List group border radius
 $list-group-border-radius                   : $border-radius-base !default;
 
 //** Background color of single list items on hover
-$list-group-hover-bg                        : #f5f5f5 !default;
+$list-group-hover-bg                        : $gray-lighter-bg !default;
 //** Text color of active list items
 $list-group-active-color                    : $component-active-color !default;
 //** Background color of active list items
@@ -707,12 +710,12 @@ $panel-footer-padding                       : $panel-heading-padding !default;
 $panel-border-radius                        : $border-radius-base !default;
 
 //** Border color for elements within panels
-$panel-inner-border                         : #ddd !default;
-$panel-footer-bg                            : #f5f5f5 !default;
+$panel-inner-border                         : $gray-lighter-bg2 !default;
+$panel-footer-bg                            : $gray-lighter-bg !default;
 
 $panel-default-text                         : $gray-dark !default;
-$panel-default-border                       : #ddd !default;
-$panel-default-heading-bg                   : #f5f5f5 !default;
+$panel-default-border                       : $gray-lighter-bg2 !default;
+$panel-default-heading-bg                   : $gray-lighter-bg !default;
 
 $panel-primary-text                         : #fff !default;
 $panel-primary-border                       : $brand-primary !default;
@@ -743,7 +746,7 @@ $thumbnail-padding                          : 4px !default;
 //** Thumbnail background color
 $thumbnail-bg                               : $body-bg !default;
 //** Thumbnail border color
-$thumbnail-border                           : #ddd !default;
+$thumbnail-border                           : $gray-lighter-bg2 !default;
 //** Thumbnail border radius
 $thumbnail-border-radius                    : $border-radius-base !default;
 
@@ -756,7 +759,7 @@ $thumbnail-caption-padding                  : 9px !default;
 //
 //##
 
-$well-bg                                    : #f5f5f5 !default;
+$well-bg                                    : $gray-lighter-bg !default;
 $well-border                                : transparent !default;
 
 //== Badges
@@ -784,7 +787,7 @@ $badge-border-radius                        : 10px !default;
 $breadcrumb-padding-vertical                : 8px !default;
 $breadcrumb-padding-horizontal              : 15px !default;
 //** Breadcrumb background color
-$breadcrumb-bg                              : #f5f5f5 !default;
+$breadcrumb-bg                              : $gray-lighter-bg !default;
 //** Breadcrumb text color
 $breadcrumb-color                           : #ccc !default;
 //** Text color of current page in the breadcrumb
@@ -826,7 +829,7 @@ $code-bg                                    : #f9f2f4 !default;
 $kbd-color                                  : #fff !default;
 $kbd-bg                                     : #333 !default;
 
-$pre-bg                                     : #f5f5f5 !default;
+$pre-bg                                     : $gray-lighter-bg !default;
 $pre-color                                  : $gray-dark !default;
 $pre-border-color                           : #ccc !default;
 $pre-scrollable-max-height                  : 340px !default;
