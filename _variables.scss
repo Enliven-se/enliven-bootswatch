@@ -42,7 +42,7 @@ $gray-lighter-bg2                           : #dddddd;
 $brand-primary                              : $shakespeare !default;
 $brand-success                              : $sea-green !default;
 $brand-info                                 : $sea-pink !default;
-$brand-warning                              : $tomato !default;
+$brand-warning                              : $supernova !default;
 $brand-danger                               : #e51c23 !default;
 
 //== Scaffolding
@@ -166,11 +166,11 @@ $table-border-color                         : $gray-lighter-bg2 !default;
 $btn-font-weight                            : normal !default;
 
 $btn-default-color                          : $black-forest !default;
-$btn-default-bg                             : #fff !default;
+$btn-default-bg                             : $shakespeare !default;
 $btn-default-border                         : transparent !default;
 
 $btn-primary-color                          : #fff !default;
-$btn-primary-bg                             : $brand-primary !default;
+$btn-primary-bg                             : $tomato !default;
 $btn-primary-border                         : transparent !default;
 
 $btn-success-color                          : #fff !default;
