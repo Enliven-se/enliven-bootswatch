@@ -253,7 +253,11 @@ gulp.task('views', () => {
 // deploy to Github pages
 gulp.task('deploy', ['build', 'extras'], () => {
   return gulp.src(destination)
-    .pipe($.subtree())
+    .pipe($.subtree({
+      remote: 'github',
+      branch: 'gh-pages',
+      message: 'deployed by gulp'
+    }))
     .pipe($.clean());
 });
 
