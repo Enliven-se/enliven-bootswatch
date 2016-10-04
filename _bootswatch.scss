@@ -1,8 +1,10 @@
 // ENLIVEN Bootswatch
 // -----------------------------------------------------
-@import "bower_components/compass-mixins/lib/compass";
-@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins"; // include fonts
-@import "app/fonts/fonts"; // Navbar =====================================================================
+@import "node_modules/compass-mixins/lib/compass";
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+// include fonts
+@import "app/fonts/fonts";
+// Navbar =====================================================================
 
 .navbar {
     border: none;
@@ -95,10 +97,10 @@
     }
 
     &-vertical {
-         > .btn + .btn-group,
+         > .btn + .btn,
          > .btn-group + .btn,
          > .btn-group + .btn-group,
-        > .btn + .btn {
+        > .btn + .btn-group {
             margin-top: 0;
         }
     }
@@ -161,9 +163,9 @@ a {
 // Tables =====================================================================
 
 .table-hover {
-     > tbody > tr > td,
+     > tbody > tr,
      > tbody > tr > th,
-    > tbody > tr {
+    > tbody > tr > td {
         @include transition(all 0.2s);
     }
 }
@@ -443,8 +445,8 @@ input[type="checkbox"] {
 // Navs =======================================================================
 
 .nav-tabs {
-     > li > a:focus,
-    > li > a {
+     > li > a,
+    > li > a:focus {
         margin-right    : 0;
         background-color: transparent;
         border          : none;

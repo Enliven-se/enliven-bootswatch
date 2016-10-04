@@ -1,14 +1,14 @@
 {
   "name": "enliven-bootswatch",
   "description": "Bootstrap bootswatch for ENLIVEN",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "contributors": [
-      "Daniel \"Klokie\" Grossfeld <klokie@enliven.co>",
-      "Isaiah Blodgett <isaiah@enliven.co>"
-      ],
+    "Daniel \"Klokie\" Grossfeld <klokie@enliven.co>",
+    "Isaiah Blodgett <isaiah@enliven.co>"
+  ],
   "repository": {
-      "type": "git",
-      "url": "https://gitlab.com/enliven/enliven-bootswatch.git"
+    "type": "git",
+    "url": "https://gitlab.com/enliven/enliven-bootswatch.git"
   },
   "private": true,
   "engines": {
@@ -64,5 +64,9 @@
         "single"
       ]
     }
+  },
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "compass-mixins": "^0.12.10"
   }
 }
