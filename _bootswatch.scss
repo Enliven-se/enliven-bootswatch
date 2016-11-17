@@ -1,7 +1,7 @@
 // ENLIVEN Bootswatch
 // -----------------------------------------------------
-@import "node_modules/compass-mixins/lib/compass";
-@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+// @import "node_modules/compass-mixins/lib/compass";
+// @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
 // include fonts
 @import "app/fonts/fonts";
 // Navbar =====================================================================
@@ -485,6 +485,11 @@ input[type="checkbox"] {
         & > li > a:focus,
         & > li > a:hover {
             border: none;
+        }
+
+        & > li {
+            display: inline-block !important; // @FIXME
+            width  : auto !important; // @FIXME
         }
     }
 
