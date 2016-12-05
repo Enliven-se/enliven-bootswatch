@@ -26,8 +26,15 @@
     font-weight: 300;
     font-style : normal;
 }
+@font-face {
+    font-family: "avenirnext-demibold";
+    src        : url("https://style.enliven.co/fonts/avenir-next-lt-pro/avenirnext-demibold.eot");
+    src        : url("https://style.enliven.co/fonts/avenir-next-lt-pro/avenirnext-demibold.eot?#iefix") format("embedded-opentype"), url("https://style.enliven.co/fonts/avenir-next-lt-pro/avenirnext-demibold.woff2") format("woff2"), url("https://style.enliven.co/fonts/avenir-next-lt-pro/avenirnext-demibold.woff") format("woff"), url("https://style.enliven.co/fonts/avenir-next-lt-pro/avenirnext-demibold.ttf") format("truetype"), url("https://style.enliven.co/fonts/avenir-next-lt-pro/avenirnext-demibold.svg#avenirnext-demibold") format("svg");
+    font-weight: 300;
+    font-style : normal;
+}
 
-/*@font-face {
+/*
     font-family: "avenirnext-boldCn";
     src: url(//style.enliven.co/fonts/avenir-next-lt-pro/avenirnext-boldCn.eot);
     src: url(//style.enliven.co/fonts/avenir-next-lt-pro/avenirnext-boldCn.eot?#iefix) format("embedded-opentype"),
@@ -71,18 +78,6 @@
          url(//style.enliven.co/fonts/avenir-next-lt-pro/AvenirNextLTPro-CnIt.woff) format("woff"),
          url(//style.enliven.co/fonts/avenir-next-lt-pro/AvenirNextLTPro-CnIt.ttf) format("truetype"),
          url(//style.enliven.co/fonts/avenir-next-lt-pro/AvenirNextLTPro-CnIt.svg#AvenirNextLTPro-CnIt) format("svg");
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "AvenirNextLTPro-Demi";
-    src: url(//style.enliven.co/fonts/avenir-next-lt-pro/AvenirNextLTPro-Demi.eot);
-    src: url(//style.enliven.co/fonts/avenir-next-lt-pro/AvenirNextLTPro-Demi.eot?#iefix) format("embedded-opentype"),
-         url(//style.enliven.co/fonts/avenir-next-lt-pro/AvenirNextLTPro-Demi.woff2) format("woff2"),
-         url(//style.enliven.co/fonts/avenir-next-lt-pro/AvenirNextLTPro-Demi.woff) format("woff"),
-         url(//style.enliven.co/fonts/avenir-next-lt-pro/AvenirNextLTPro-Demi.ttf) format("truetype"),
-         url(//style.enliven.co/fonts/avenir-next-lt-pro/AvenirNextLTPro-Demi.svg#AvenirNextLTPro-Demi) format("svg");
     font-weight: 300;
     font-style: normal;
 }
@@ -181,9 +176,9 @@
          url(//style.enliven.co/fonts/avenir-next-lt-pro/AvenirNextLTPro-MediumCnIt.svg#AvenirNextLTPro-MediumCnIt) format("svg");
     font-weight: 300;
     font-style: normal;
-}*/
+}
 
-/*@font-face {
+@font-face {
     font-family: "AvenirNextLTPro-UltLtCn";
     src: url(//style.enliven.co/fonts/avenir-next-lt-pro/AvenirNextLTPro-UltLtCn.eot);
     src: url(//style.enliven.co/fonts/avenir-next-lt-pro/AvenirNextLTPro-UltLtCn.eot?#iefix) format("embedded-opentype"),
@@ -205,4 +200,5 @@
          url(//style.enliven.co/fonts/avenir-next-lt-pro/AvenirNextLTPro-UltLtCnIt.svg#AvenirNextLTPro-UltLtCnIt) format("svg");
     font-weight: 300;
     font-style: normal;
-}*/
+}
+*/
