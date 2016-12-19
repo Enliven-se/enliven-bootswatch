@@ -45,7 +45,7 @@
 
         &:active {
             background-color: darken($bg, 12%);
-            @include filter-gradient(darken($bg, 12%), $bg);
+            // @include filter-gradient(darken($bg, 12%), $bg);
             background-size : 1000% 1000%;
             @include box-shadow(2px 2px 4px rgba(0,0,0,.4));
         }
