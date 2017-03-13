@@ -2,11 +2,15 @@
 ENLIVEN fonts
 
 - included:
-  - theanodidot-bold-webfont.ttf
-  - theanodidot-regular-webfont.ttf
+  - didot.ttf
+  - didot-regular.ttf
+  - didot-italic.ttf
   - avenirnext-bold.ttf
   - avenirnext-demibold.ttf
   - avenirnext-regular.ttf
+- deprecated:
+  - theanodidot-bold.ttf
+  - theanodidot-regular.ttf
 - not yet included:
   - avenirnext-bolditalic.ttf
   - avenirnext-demibolditalic.ttf
@@ -18,6 +22,7 @@ ENLIVEN fonts
   - avenirnext-ultralight.ttf
   - avenirnext-ultralightitalic.ttf
  */
+/*
 @font-face {
     font-family: "TheanoDidot-Regular";
     src        : url("https://style.enliven.co/fonts/theanodidot/theanodidot-regular-webfont.eot");
@@ -32,8 +37,9 @@ ENLIVEN fonts
     font-weight: 300;
     font-style : normal;
 }
+*/
 @font-face {
-    font-family: "AvenirNextLTPro-Regular";
+    font-family: "avenirnext-regular";
     src        : url("https://style.enliven.co/fonts/avenir-next-lt-pro/avenirnext-regular.eot");
     src        : url("https://style.enliven.co/fonts/avenir-next-lt-pro/avenirnext-regular.eot?#iefix") format("embedded-opentype"), url("https://style.enliven.co/fonts/avenir-next-lt-pro/avenirnext-regular.woff2") format("woff2"), url("https://style.enliven.co/fonts/avenir-next-lt-pro/avenirnext-regular.woff") format("woff"), url("https://style.enliven.co/fonts/avenir-next-lt-pro/avenirnext-regular.ttf") format("truetype"), url("https://style.enliven.co/fonts/avenir-next-lt-pro/avenirnext-regular.svg#AvenirNextLTPro-Regular") format("svg");
     font-weight: 300;
