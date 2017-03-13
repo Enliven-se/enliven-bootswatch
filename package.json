@@ -1,7 +1,7 @@
 {
   "name": "enliven-bootswatch",
   "description": "Bootstrap bootswatch for ENLIVEN",
-  "version": "0.1.4",
+  "version": "0.3.0",
   "contributors": [
     "Daniel \"Klokie\" Grossfeld <klokie@enliven.co>",
     "Isaiah Blodgett <isaiah@enliven.co>"
