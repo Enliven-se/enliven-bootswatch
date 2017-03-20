@@ -27,6 +27,7 @@ $golden-retriever                           : #927a4e;
 // $gray-lighter                               : #c1c1c1;
 // $well-bg                                    : #f5f5f5;
 $gray-base                                  : $black-forest;
+$heading-gray                               : #4a4a4a;
 $gray-darker                                : #454241;
 $gray-dark                                  : #3c4137;
 $gray                                       : #6d7069;
@@ -485,24 +486,14 @@ $pre-border-color                           : #ccc !default;
 $pre-scrollable-max-height                  : 340px !default; //== Type
 //
 // // Horizontal offset for forms and lists.
-$component-offset-horizontal                : 180px !default;
-// Text muted color
-$text-muted                                 : $gray-light !default;
-// Abbreviations and acronyms border color
-$abbr-border-color                          : $gray-light !default;
-// Headings small color
-$headings-small-color                       : $gray-light !default;
-// Blockquote small color
-$blockquote-small-color                     : $gray-light !default;
-// Blockquote font size
-$blockquote-font-size                       : ($font-size-base * 2.5) !default;
-// Blockquote border color
-$blockquote-border-color                    : none !default;
-// Page header border color
-$page-header-border-color                   : $gray-lighter !default;
-// Width of horizontal description list titles
-$dl-horizontal-offset                       : $component-offset-horizontal !default;
-// Point at which .dl-horizontal becomes horizontal
-$dl-horizontal-breakpoint                   : $grid-float-breakpoint !default;
-// Horizontal line color.
+$component-offset-horizontal                : 180px !default; // Text muted color
+$text-muted                                 : $gray-light !default; // Abbreviations and acronyms border color
+$abbr-border-color                          : $gray-light !default; // Headings small color
+$headings-small-color                       : $gray-light !default; // Blockquote small color
+$blockquote-small-color                     : $gray-light !default; // Blockquote font size
+$blockquote-font-size                       : ($font-size-base * 2.5) !default; // Blockquote border color
+$blockquote-border-color                    : none !default; // Page header border color
+$page-header-border-color                   : $gray-lighter !default; // Width of horizontal description list titles
+$dl-horizontal-offset                       : $component-offset-horizontal !default; // Point at which .dl-horizontal becomes horizontal
+$dl-horizontal-breakpoint                   : $grid-float-breakpoint !default; // Horizontal line color.
 $hr-border                                  : $gray-lighter !default;
