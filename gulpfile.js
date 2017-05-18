@@ -279,7 +279,7 @@ gulp.task('build', ['lint', 'html', 'images', 'fonts', 'extras'], () => {
 // Update bower, meteor, npm at once:
 gulp.task('bump', function(){
   gulp.src(['./bower.json', './package.js', './package.json'])
-  .pipe(bump({type:'minor'}))
+  .pipe($.bump({type:'minor'}))
   .pipe(gulp.dest('./'));
 });
 
