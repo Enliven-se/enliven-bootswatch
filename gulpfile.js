@@ -1,4 +1,6 @@
-// generated on 2016-06-08 using generator-webapp 2.1.0
+/**
+* Gulp build file for enliven-bootswatch
+*/
 const gulp = require('gulp');
 const gulpLoadPlugins = require('gulp-load-plugins');
 const $ = gulpLoadPlugins();
@@ -12,14 +14,18 @@ const babelify = require('babelify');
 const buffer = require('vinyl-buffer');
 const source = require('vinyl-source-stream');
 
+const environments = require('gulp-environments');
+const development = environments.development;
+const production = environments.production;
+
 const reload = browserSync.reload;
 
 const destination = 'dist';
 
 gulp.task('styles', () => {
-  return gulp.src('app/styles/*.scss')
+  return gulp.src('app/styles/main.scss')
     .pipe($.plumber())
-    .pipe($.sourcemaps.init())
+    .pipe(development($.sourcemaps.init()))
     .pipe($.sass.sync({
       outputStyle: 'expanded',
       precision: 10,
@@ -28,7 +34,7 @@ gulp.task('styles', () => {
     .pipe($.autoprefixer({
       browsers: ['> 1%', 'last 2 versions', 'Firefox ESR']
     }))
-    .pipe($.sourcemaps.write())
+    .pipe(development($.sourcemaps.write()))
     .pipe(gulp.dest('.tmp/styles'))
     .pipe(reload({
       stream: true
@@ -46,10 +52,10 @@ gulp.task('scripts', () => {
     .pipe(source('bundle.js'))
     .pipe($.plumber())
     .pipe(buffer())
-    .pipe($.sourcemaps.init({
+    .pipe(development($.sourcemaps.init({
       loadMaps: true
-    }))
-    .pipe($.sourcemaps.write('.'))
+    })))
+    .pipe(development($.sourcemaps.write('.')))
     .pipe(gulp.dest('.tmp/scripts'))
     .pipe(reload({
       stream: true
@@ -92,7 +98,7 @@ gulp.task('html', ['views', 'styles', 'scripts'], () => {
     .pipe($.useref({
       searchPath: ['.tmp', 'app', '.']
     }))
-    .pipe($.if('*.js', $.uglify()))
+    .pipe(production($.if('*.js', $.uglify())))
     .pipe($.if('*.css', $.cssnano({
       safe: true,
       autoprefixer: false
@@ -211,7 +217,7 @@ gulp.task('serve:test', ['scripts'], () => {
 
 // inject bower components
 gulp.task('wiredep', () => {
-  gulp.src('app/styles/*.scss')
+  gulp.src('app/styles/main.scss')
     .pipe(wiredep({
       ignorePath: /^(\.\.\/)+/
     }))
@@ -252,6 +258,7 @@ gulp.task('views', () => {
 
 // deploy to Github pages
 gulp.task('deploy', ['build', 'extras'], () => {
+  environments.current(production);
   return gulp.src(destination)
     .pipe($.subtree({
       remote: 'github',
@@ -267,6 +274,13 @@ gulp.task('build', ['lint', 'html', 'images', 'fonts', 'extras'], () => {
       title: 'build',
       gzip: true
     }));
+});
+
+// Update bower, meteor, npm at once:
+gulp.task('bump', function(){
+  gulp.src(['./bower.json', './package.js', './package.json'])
+  .pipe(bump({type:'minor'}))
+  .pipe(gulp.dest('./'));
 });
 
 gulp.task('pre-commit', ['lint', 'styles', 'scripts']);

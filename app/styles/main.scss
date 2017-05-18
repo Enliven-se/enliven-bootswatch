@@ -1,10 +1,11 @@
-// include variables & bootswatch first to set rules
-@import '_variables.scss';
+// global variables
+@import 'variables';
+@import 'breakpoints';
 
 // bower:scss
-@import 'bower_components/compass-mixins/lib/_compass.scss';
-@import 'bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
+@import 'bower_components/compass-mixins/lib/compass';
+@import 'bower_components/bootstrap-sass/assets/stylesheets/bootstrap';
 // endbower
-
-// include bootswatch again to override defaults
-@import '_bootswatch.scss';
+//
+// bootswatch
+@import 'bootswatch';
