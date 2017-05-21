@@ -1,9 +1,15 @@
-@import '_variables';
-@import 'breakpoints';
-@import 'bootswatch';
+@import '../../variables';
+@import '../../mixins';
+@import '../../breakpoints';
+
+// @FIXME:
+@import '../../bower_components/compass-mixins/lib/compass';
+@import '../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap';
+//
+@import '../../bootswatch';
 
 // extra
-@import "spinner";
-@import "accounts";
-@import "forms";
-@import "users";
+@import '../../spinner';
+@import '../../accounts';
+@import '../../forms';
+@import '../../users';

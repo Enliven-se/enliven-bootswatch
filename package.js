@@ -15,8 +15,7 @@ Package.onUse(function (api) {
   ]);
 
   api.addFiles([
-    './_variables.scss',
-    './_bootswatch.scss'
+    'app/styles/client.scss'
   ], ['client']);
 
 });

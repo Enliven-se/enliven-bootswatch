@@ -50,6 +50,7 @@
     "guppy-pre-commit": "^0.3.0",
     "main-bower-files": "^2.5.0",
     "sc5-styleguide": "^1.1.1",
+    "scss-utils": "^1.0.1",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
     "wiredep": "^4.0.0"
@@ -75,5 +76,26 @@
     "presets": [
       "es2015"
     ]
+  },
+  "postcss": {
+    "plugins": {
+      "postcss-easy-import": {
+        "extensions": [
+          ".css",
+          ".scss",
+          ".import.css"
+        ],
+        "prefix": "_"
+      },
+      "postcss-simple-vars": {},
+      "postcss-sassy-mixins": {},
+      "postcss-nested": {},
+      "autoprefixer": {
+        "browsers": [
+          "last 2 versions"
+        ]
+      }
+    },
+    "parser": "postcss-scss"
   }
 }

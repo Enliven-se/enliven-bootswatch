@@ -2,5 +2,8 @@
   "enableAutoprefixer": true,
   "outputStyle": "compressed",
   "sourceComments": true,
-  "sourceMap": true
+  "sourceMap": true,
+  "includePaths": [
+    "{}/node_modules/"
+  ]
 }
