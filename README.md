@@ -4,6 +4,8 @@ Packaged for use with Bower, Node, and Meteor.
 
 Usage:
 
+- Set up: `yarn setup`
+-- (or `npm run setup`)
 - Watch & learn: `gulp serve`
 - Build: `gulp build`
 - Deploy to Github Pages: `gulp deploy`
