@@ -121,7 +121,7 @@ gulp.task('images', () => {
   return gulp.src('app/images/**/*')
     .pipe($.cache($.imagemin({
       progressive: true,
-      interlaced: true,
+      //interlaced: true,
       // don't remove IDs from SVGs, they are often used
       // as hooks for embedding and styling
       svgoPlugins: [{
@@ -283,6 +283,8 @@ gulp.task('bump', function(){
   .pipe(gulp.dest('./'));
 });
 
+// register git pre-commit task
+// see also https://github.com/therealklanni/guppy-pre-commit/issues/9
 gulp.task('pre-commit', ['lint', 'styles', 'scripts']);
 
 gulp.task('default', ['clean'], () => {
