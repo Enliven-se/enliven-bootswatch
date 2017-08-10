@@ -1,7 +1,7 @@
 Package.describe({
   name: "enliven:enliven-bootswatch",
   summary: "ENLIVEN basic styles package",
-  version: "0.4.0",
+  version: "0.5.0",
   git: "https://gitlab.com/enliven/enliven-bootswatch.git"
 });
 
