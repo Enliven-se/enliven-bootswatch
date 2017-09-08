@@ -99,7 +99,7 @@ body,
 .page {
   // -webkit-font-smoothing: antialiased;
   // letter-spacing        : 0.1px;
-  font-family: $font-family-sans-serif;
+  font-family: $font-family-base;
   font-style: normal;
 }
 
@@ -142,6 +142,7 @@ em {
 
 button,
 input {
+  font-family: $font-family-sans-serif; //
   // -webkit-font-smoothing: antialiased;
   // letter-spacing        : 0.1px;
 }
