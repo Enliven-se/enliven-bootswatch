@@ -1,7 +1,7 @@
 {
   "name": "enliven-bootswatch",
   "description": "Bootstrap bootswatch for ENLIVEN",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "contributors": [
     "Daniel \"Klokie\" Grossfeld <klokie@enliven.co>",
     "Isaiah Blodgett <isaiah@enliven.co>"
@@ -66,10 +66,7 @@
       "browser": true
     },
     "rules": {
-      "quotes": [
-        2,
-        "single"
-      ]
+      "quotes": [2, "single"]
     }
   },
   "dependencies": {
@@ -77,27 +74,19 @@
     "compass-mixins": "^0.12.10"
   },
   "babel": {
-    "presets": [
-      "es2015"
-    ]
+    "presets": ["es2015"]
   },
   "postcss": {
     "plugins": {
       "postcss-easy-import": {
-        "extensions": [
-          ".css",
-          ".scss",
-          ".import.css"
-        ],
+        "extensions": [".css", ".scss", ".import.css"],
         "prefix": "_"
       },
       "postcss-simple-vars": {},
       "postcss-sassy-mixins": {},
       "postcss-nested": {},
       "autoprefixer": {
-        "browsers": [
-          "last 2 versions"
-        ]
+        "browsers": ["last 2 versions"]
       }
     },
     "parser": "postcss-scss"
