@@ -1,0 +1,185 @@
+@charset "UTF-8";
+/*
+ENLIVEN fonts
+
+- included:
+  - didot.ttf
+  - didot-regular.ttf
+  - didot-italic.ttf
+  - avenirnext-bold.ttf
+  - avenirnext-demibold.ttf
+  - avenirnext-regular.ttf
+- deprecated:
+  - theanodidot-bold.ttf
+  - theanodidot-regular.ttf
+- not yet included:
+  - avenirnext-bolditalic.ttf
+  - avenirnext-demibolditalic.ttf
+  - avenirnext-heavy.ttf
+  - avenirnext-heavyitalic.ttf
+  - avenirnext-italic.ttf
+  - avenirnext-medium.ttf
+  - avenirnext-mediumitalic.ttf
+  - avenirnext-ultralight.ttf
+  - avenirnext-ultralightitalic.ttf
+ */
+
+// @font-face {
+//   font-family: "TheanoDidot-Regular";
+//   src        : url("https://style.enliven.co/fonts/theanodidot/theanodidot-regular-webfont.eot");
+//   src        : url("https://style.enliven.co/fonts/theanodidot/theanodidot-regular-webfont.eot?#iefix") format("embedded-opentype"), url("https://style.enliven.co/fonts/theanodidot/theanodidot-regular-webfont.woff2") format("woff2"), url("https://style.enliven.co/fonts/theanodidot/theanodidot-regular-webfont.woff") format("woff"), url("https://style.enliven.co/fonts/theanodidot/theanodidot-regular-webfont.ttf") format("truetype"), url("https://style.enliven.co/fonts/theanodidot/theanodidot-regular-webfont.svg#TheanoDidot-Regular") format("svg");
+//   font-weight: 300;
+//   font-style : normal;
+// }
+// @font-face {
+//   font-family: "TheanoDidot-Bold";
+//   src        : url("https://style.enliven.co/fonts/theanodidot/theanodidot-bold-webfont.eot");
+//   src        : url("https://style.enliven.co/fonts/theanodidot/theanodidot-bold-webfont.eot?#iefix") format("embedded-opentype"), url("https://style.enliven.co/fonts/theanodidot/theanodidot-bold-webfont.woff2") format("woff2"), url("https://style.enliven.co/fonts/theanodidot/theanodidot-bold-webfont.woff") format("woff"), url("https://style.enliven.co/fonts/theanodidot/theanodidot-bold-webfont.ttf") format("truetype"), url("https://style.enliven.co/fonts/theanodidot/theanodidot-bold-webfont.svg#TheanoDidot-Regular") format("svg");
+//   font-weight: 300;
+//   font-style : normal;
+// }
+
+//
+// Avenir Next
+//
+@font-face {
+  font-family: "avenirnext";
+  src: local("avenirnext-regular"),
+    url("https://style.enliven.co/fonts/avenir-next-lt-pro/avenirnext-regular.woff2")
+      format("woff2"),
+    url("https://style.enliven.co/fonts/avenir-next-lt-pro/avenirnext-regular.woff")
+      format("woff"),
+    url("https://style.enliven.co/fonts/avenir-next-lt-pro/avenirnext-regular.ttf")
+      format("truetype"),
+    url("https://style.enliven.co/fonts/avenir-next-lt-pro/avenirnext-regular.svg#AvenirNextLTPro-Regular")
+      format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "avenirnext";
+  src: local("avenirnext-bold"),
+    url("https://style.enliven.co/fonts/avenir-next-lt-pro/avenirnext-bold.woff2")
+      format("woff2"),
+    url("https://style.enliven.co/fonts/avenir-next-lt-pro/avenirnext-bold.woff")
+      format("woff"),
+    url("https://style.enliven.co/fonts/avenir-next-lt-pro/avenirnext-bold.ttf")
+      format("truetype"),
+    url("https://style.enliven.co/fonts/avenir-next-lt-pro/avenirnext-bold.svg#avenirnext-bold")
+      format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "avenirnext";
+  src: local("avenirnext-demibold"),
+    url("https://style.enliven.co/fonts/avenir-next-lt-pro/avenirnext-demibold.woff2")
+      format("woff2"),
+    url("https://style.enliven.co/fonts/avenir-next-lt-pro/avenirnext-demibold.woff")
+      format("woff"),
+    url("https://style.enliven.co/fonts/avenir-next-lt-pro/avenirnext-demibold.ttf")
+      format("truetype"),
+    url("https://style.enliven.co/fonts/avenir-next-lt-pro/avenirnext-demibold.svg#avenirnext-demibold")
+      format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: fallback;
+}
+//
+// Didot
+//
+@font-face {
+  font-family: "didot";
+  src: local("didot-bold"), local("Didot Bold"),
+    url("https://style.enliven.co/fonts/didot/didot-bold.woff2") format("woff2"),
+    url("https://style.enliven.co/fonts/didot/didot-bold.woff") format("woff"),
+    url("https://style.enliven.co/fonts/didot/didot-bold.ttf")
+      format("truetype"),
+    url("https://style.enliven.co/fonts/didot/didot-bold.svg#didot-bold")
+      format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "didot";
+  src: local("didot-italic"), local("Didot Italic"),
+    url("https://style.enliven.co/fonts/didot/didot-italic.woff2")
+      format("woff2"),
+    url("https://style.enliven.co/fonts/didot/didot-italic.woff") format("woff"),
+    url("https://style.enliven.co/fonts/didot/didot-italic.ttf")
+      format("truetype"),
+    url("https://style.enliven.co/fonts/didot/didot-italic.svg#didot-italic")
+      format("svg");
+  font-weight: normal;
+  font-style: italic;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "didot";
+  src: local("didot"), local("Didot Regular"), local("Didot"),
+    url("https://style.enliven.co/fonts/didot/didot.woff2") format("woff2"),
+    url("https://style.enliven.co/fonts/didot/didot.woff") format("woff"),
+    url("https://style.enliven.co/fonts/didot/didot.ttf") format("truetype"),
+    url("https://style.enliven.co/fonts/didot/didot.svg#didot") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
+}
+//
+// Libre Caslon
+//
+@font-face {
+  font-family: "libre-caslon";
+  src: local("librecaslontext-regular"),
+    url("https://style.enliven.co/fonts/libre-caslon-text/librecaslontext-regular-webfont.woff2")
+      format("woff2"),
+    url("https://style.enliven.co/fonts/libre-caslon-text/librecaslontext-regular-webfont.woff")
+      format("woff"),
+    url("https://style.enliven.co/fonts/libre-caslon-text/librecaslontext-regular-webfont.ttf")
+      format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "libre-caslon";
+  src: local("librecaslontext-bold"),
+    url("https://style.enliven.co/fonts/libre-caslon-text/librecaslontext-bold-webfont.woff2")
+      format("woff2"),
+    url("https://style.enliven.co/fonts/libre-caslon-text/librecaslontext-bold-webfont.woff")
+      format("woff"),
+    url("https://style.enliven.co/fonts/libre-caslon-text/librecaslontext-bold-webfont.ttf")
+      format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "libre-caslon";
+  src: local("librecaslontext-italic"),
+    url("https://style.enliven.co/fonts/libre-caslon-text/librecaslontext-italic-webfont.woff2")
+      format("woff2"),
+    url("https://style.enliven.co/fonts/libre-caslon-text/librecaslontext-italic-webfont.woff")
+      format("woff"),
+    url("https://style.enliven.co/fonts/libre-caslon-text/librecaslontext-italic-webfont.ttf")
+      format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "socicon";
+  src: url("https://style.enliven.co/fonts/socicon/socicon.eot");
+  src: url("https://style.enliven.co/fonts/socicon/socicon.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://style.enliven.co/fonts/socicon/socicon.woff") format("woff"),
+    url("https://style.enliven.co/fonts/socicon/socicon.ttf") format("truetype"),
+    url("https://style.enliven.co/fonts/socicon/socicon.svg#sociconregular")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
